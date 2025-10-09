@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Demonstration</title>
+</head>
+<body>
+    <h1>Array Demonstration in JS</h1>
+    <p id="demo"></p>
+    <script>
+        let fruits = ["Apple", "Banana", "StarFruit", "Mango"];
+        document.getElementById("demo").innerHTML = "Fruits: " + fruits.join(", ");
+        for (let i = 0; i < fruits.length; i++) {
+            document.getElementById("demo").innerHTML += "<br>Fruit " + (i + 1) + ": " + fruits[i];
+        }
+        document.getElementById("demo").innerHTML += "<br><br>";
+
+        // Adding a new fruit to the array
+        fruits.push("Orange");
+        document.getElementById("demo").innerHTML += "<br>After push: " + fruits.join(", ");
+        for (let i = 0; i < fruits.length; i++) {
+            document.getElementById("demo").innerHTML += "<br>Fruit " + (i + 1) + ": " + fruits[i];
+        }
+        document.getElementById("demo").innerHTML += "<br><br>";
+
+        // Removing the last fruit from the array
+        fruits.pop();
+        document.getElementById("demo").innerHTML += "<br>After pop: " + fruits.join(", ");
+        for (let i = 0; i < fruits.length; i++) {
+            document.getElementById("demo").innerHTML += "<br>Fruit " + (i + 1) + ": " + fruits[i];
+        }
+        document.getElementById("demo").innerHTML += "<br><br>";
+
+        // For in operator
+        document.getElementById("demo").innerHTML += "<br>After using in: " + fruits.join(", ");
+        for(let i in fruits) {
+            document.getElementById("demo").innerHTML += "<br>Fruit: " + fruits[i];
+        }
+        document.getElementById("demo").innerHTML += "<br><br>";
+
+        // For of operator
+        document.getElementById("demo").innerHTML += "<br>After using of: " + fruits.join(", ");
+        for(let i of fruits) {
+            document.getElementById("demo").innerHTML += "<br>Fruit: " + fruits[i];
+        }
+        document.getElementById("demo").innerHTML += "<br><br>";
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operators Demo</title>
+</head>
+<body>
+    <h1>Operators Demo</h1>
+    <p id="demo"></p>
+    <script>
+        let a = 3;
+        let b = 15;
+        let result = (a>b) ? "a is greater than b" : "a is not greater than b";
+
+    document.getElementById("demo").innerText = `
+    a: ${a}
+    b: ${b}
+
+    --- Arithmetic operators ---
+    Addition: ${a + b}
+    Subtraction: ${a - b}
+    Multiplication: ${a * b}
+    Division: ${a / b}
+    Modulus: ${a % b}
+
+    --- Assignment operators ---
+    Addition Assignment: ${(a += b)}
+    Subtraction Assignment: ${(a -= b)}
+    Multiplication Assignment: ${(a *= b)}
+    Division Assignment: ${(a /= b)}
+    Modulus Assignment: ${(a %= b)}
+
+    --- Comparison operators ---
+    Greater than: ${a > b}
+    Greater than or equal to: ${a >= b}
+    Less than: ${a < b}
+    Less than or equal to: ${a <= b}
+
+    --- Unary operators ---
+    Plus: ${+a}
+    Negation: ${-b}
+    Increment: ${++a}
+    Decrement: ${--b}
+
+    --- Equality operators ---
+    Equal: ${a == b}
+    Not Equal: ${a != b}
+
+    --- Relational operators ---
+    Equivalence: ${a === b}
+    Non-Equivalence: ${a !== b}
+
+    --- Logical operators ---
+    Logical AND: ${a > 0 && b > 0}
+    Logical OR: ${a > 0 || b > 0}
+    Logical NOT: ${!(a > 0)}
+
+    --- Ternary operator ---
+    Ternary: ${result}   `;
+    </script>
+</body>
+</html>

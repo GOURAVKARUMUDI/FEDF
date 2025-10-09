@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes in JS</title>
+</head>
+<body>
+    <h1>DataType Demo in JS</h1>
+    <p id="demo"></p>
+    <script>
+        const A1=12;
+        const A2="Ramu";
+        const A3=true;
+        let   A4=undefined;
+        const A5=null;
+        const A6=143250003077n;
+        const A7=Symbol("ID"); 
+
+        document.getElementById("demo").innerHTML = `
+        (Type: ${typeof A1})    
+            A1: ${A1} <br>
+        (Type: ${typeof A2})
+            A2: ${A2} <br>
+        (Type: ${typeof A3})
+            A3: ${A3} <br>
+        (Type: ${typeof A4})
+            A4: ${A4}<br>
+        (Type: ${typeof A5})
+            A5: ${A5}<br>
+        (Type: ${typeof A6})
+            A6: ${A6}<br>
+        (Type: ${typeof A7})
+            A7: ${A7.toString()}`; 
+    </script>
+
+</body>
+</html>

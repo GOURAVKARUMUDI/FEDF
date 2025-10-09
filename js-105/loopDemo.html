@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Demonstration</title>
+</head>
+<body>
+    <h1>Loop Demonstration in JS</h1>
+    <p id="demo"></p>
+    <script>
+       let i;
+        // for loop with initialization inside
+          for (i = 1; i <= 10; i++) {
+            document.getElementById("demo").innerText += `${i}\n`;
+        } 
+        document.getElementById("demo").innerText += ` It is "for" Loop \n\n`;
+
+        // for loop with initialization outside
+            i = 1; 
+          for(;i<=8;) {
+            document.getElementById("demo").innerText += `${i}\n`;
+            i++;
+        } 
+        document.getElementById("demo").innerText += ` It is "for" Loop \n\n`;
+
+        // while loop
+        i = 1;
+          while(i<=6) {
+            document.getElementById("demo").innerText += `${i}\n`;
+            i++;
+        }   
+        document.getElementById("demo").innerText += ` It is "while" Loop \n\n`;
+
+        // do-while loop
+        i = 1;
+        do {
+            document.getElementById("demo").innerText += `${i}\n`;
+            i++;
+        } while(i <= 5);
+        document.getElementById("demo").innerText += ` It is "do-while" Loop \n\n`;
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions Demonstration</title>
+</head>
+<body>
+    <h1>Functions Demonstration in JS</h1>
+    <p id="demo"></p>
+    <script>
+        function f1()
+        {
+            return "Hello from function f1!";
+        }
+        function f2(name)
+        {
+            return `Hello, ${name}! Welcome to the function demonstration.`;
+        }
+        function f3(a, b)
+        {
+            return `The sum of ${a} and ${b} is ${a + b}.`;
+        }
+        function f4(a, b, c)
+        {            return `The average of ${a}, ${b}, and ${c} is ${(a + b + c) / 3}.`;
+        }
+        document.getElementById("demo").innerHTML += f1() + "<br>";
+        document.getElementById("demo").innerHTML += f2("Gourav") + "<br>";
+        document.getElementById("demo").innerHTML += f3(5, 10) + "<br>";
+        document.getElementById("demo").innerHTML += f4(10, 20, 30) + "<br>";
+
+        //arrow function
+        const f5 = (x, y) => `The product of ${x} and ${y} is ${x * y}.`;
+        document.getElementById("demo").innerHTML += f5(4, 5) + "<br>";
+
+    </script>
+</body>
+</html>

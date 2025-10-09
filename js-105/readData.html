@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReadData using DOM</title>
+</head>
+<body>
+    <h1>Addition of Two Numbers</h1>
+    <p id="demo"></p>
+    <form>
+        <label>Enter first number:</label>
+        <input type="number" id="num1"/>
+
+        <label>Enter second number:</label>
+        <input type="number" id="num2"/>
+
+        <button type="button" onclick="sum()">Add</button>
+
+    </form>
+
+    <script>
+        function sum() 
+        {
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+            let result = n1 + n2;
+            document.getElementById("demo").innerHTML = `Hello,
+            the result of the Addition: ${result}`;
+            console.log("Sum: " + result);
+        }
+            let n1 = parseInt(document.getElementById("num1").value);
+            let n2 = parseInt(document.getElementById("num2").value);
+            let result = n1 + n2;
+            document.getElementById("demo").innerHTML =result;
+  </script>
+</body>
+
+</html>

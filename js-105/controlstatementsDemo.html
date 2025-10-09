@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Statements Demonstration</title>
+</head>
+<body>
+    <h1>Control Statements Demonstration in JS</h1>
+    <p id="demo"></p>
+    <script> 
+    let x;
+    let y;
+    let n1=parseInt(prompt("Enter first number:"));
+    let n2=parseInt(prompt("Enter second number:"));
+    document.getElementById("demo").innerHTML += "First number: " + n1 + "<br>";
+    document.getElementById("demo").innerHTML += "Second number: " + n2 + "<br>";  
+
+    //checking if first number is greater than, less than or equal to second number
+    if(n1 > n2)
+        {
+document.getElementById("demo").innerHTML += "First number is greater than second number" + "<br>";  
+        }
+    else if(n1 < n2)
+        {
+document.getElementById("demo").innerHTML += "First number is less than second number" + "<br>";  
+        }
+    else
+        {
+document.getElementById("demo").innerHTML += "Both numbers are equal" + "<br>";  
+        }
+
+//checking number for positive, negative or zero
+    if(n1 > 0)
+        {
+document.getElementById("demo").innerHTML += "Positive:" + n1 + "<br>";  
+        }
+else if(n1 < 0)
+        {
+document.getElementById("demo").innerHTML += "Negative:" + n1 + "<br>";  
+        }
+else
+{
+document.getElementById("demo").innerHTML += "It is 0" + "<br>";  
+}
+
+// checking number for weekday
+if(n1 == 1)
+{
+ document.getElementById("demo").innerHTML += "It is Monday" + "<br>";  
+}
+else if(n1 == 2)
+{
+ document.getElementById("demo").innerHTML += "It is Tuesday" + "<br>";  
+}
+else if(n1 == 3)
+{
+ document.getElementById("demo").innerHTML += "It is Wednesday" + "<br>";    
+}
+else if(n1 == 4)
+{
+ document.getElementById("demo").innerHTML += "It is Thursday" + "<br>";     
+}
+else if(n1 == 5)
+{
+ document.getElementById("demo").innerHTML += "It is Friday" + "<br>";       
+}
+else if(n1 == 6)
+{
+ document.getElementById("demo").innerHTML += "It is Saturday" + "<br>";         
+}
+else if(n1 == 7)
+{
+ document.getElementById("demo").innerHTML += "It is Sunday" + "<br>";           
+}
+else
+{
+ document.getElementById("demo").innerHTML += "Invalid input for day of the week" + "<br>";      
+}
+
+
+    </script>
+    
+</body>
+</html>
